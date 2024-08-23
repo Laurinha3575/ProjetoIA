@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma capilar</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de cronograma capilar</h1>
+        <h3>Esse é um gerador de conograma capilar com a IA Gemini,<br> 
+            onde você indica quais são os produtos que você tem,<br>
+            e a inteligencia artificial cria um conograma pra você.</h3>
+        <div class="formulario">
+            <h3>Informe os seus produtos:</h3>
+            <div id="ingredients">
+                <div class="ingredient-row">
+                    <input type="text" class="ingredient ingredient-input" placeholder="Informe um produto...">
+                    <button class="btn-danger" onclick="removeIngredient(this)" disabled>Excluir</button>
+                </div>
+                <div class="ingredient-row">
+                    <input type="text" class="ingredient ingredient-input" placeholder="Informe um produto...">
+                    <button class="btn-danger" onclick="removeIngredient(this)" disabled>Excluir</button>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="addIngredient()">Adicionar Produto</button>
+            <button class="btn-success" onclick="submitForm()">Gerar Cronograma</button>
+            <div id="response" class="response"></div>
+        </div>
+    </div>
+  
+    <footer class="footer">
+        <p>&copy;Laura Rodrigues de Camargo Santos.<br> 
+            Desenvolvimento de sistemas - SESI SENAI CE-399</p>
+    </footer>
+
+
+    <script src="../static/script.js"></script> 
+</body>
+</html>
